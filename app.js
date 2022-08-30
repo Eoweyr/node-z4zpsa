@@ -1,10 +1,10 @@
-require('dotenv');
+require('dotenv').config();
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
-const puerto = process.env.PUERTO || 3003
+const puerto = process.env.PUERTO || 3002
 
 const app = express()
-app.use('dotenv')
+
 
 
 app.listen(puerto, ()=> {
